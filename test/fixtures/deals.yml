@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alert_id: 1
+  price: 1
+  start_airport: MyString
+  end_airport: MyString
+  outbound: 2017-09-17
+  inbound: 2017-09-17
+  link: MyText
+
+two:
+  alert_id: 1
+  price: 1
+  start_airport: MyString
+  end_airport: MyString
+  outbound: 2017-09-17
+  inbound: 2017-09-17
+  link: MyText

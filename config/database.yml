@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: rovor-api_development
+  pool: 5
+  username: rovor_api
+  password: Mohtgas1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

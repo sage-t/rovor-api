@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  name: MyString
+  user_id: 1
+  state: 1
+  outbound_start: 2017-09-17
+  outbound_end: 2017-09-17
+  inbound_start: 2017-09-17
+  inbound_end: 2017-09-17
+  start_airports: MyString
+  end_airports: MyString
+  trip_len_min: 1
+  trip_len_max: 1
+  price_limit: 1
+  auto_alert: false
+
+two:
+  email: MyString
+  name: MyString
+  user_id: 1
+  state: 1
+  outbound_start: 2017-09-17
+  outbound_end: 2017-09-17
+  inbound_start: 2017-09-17
+  inbound_end: 2017-09-17
+  start_airports: MyString
+  end_airports: MyString
+  trip_len_min: 1
+  trip_len_max: 1
+  price_limit: 1
+  auto_alert: false
