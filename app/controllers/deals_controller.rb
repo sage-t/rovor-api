@@ -3,6 +3,8 @@ class DealsController < ApplicationController
 
   # GET /deals
   def index
+    Deal.destroy_old_and_orphaned
+
     @deals = Deal.all
 
     render json: @deals
@@ -16,6 +18,11 @@ class DealsController < ApplicationController
   # POST /deals
   def create
     @deal = Deal.new(deal_params)
+
+    if @deal.alert_id
+      alert = Alert.find(@deal.alert_id).update(last_searched: DateTime.now)
+      alert.new_deal_routine
+    end
 
     if @deal.save
       render json: @deal, status: :created, location: @deal
