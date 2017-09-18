@@ -46,6 +46,6 @@ class AlertsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def alert_params
-      params.require(:alert).permit(:email, :name, :user_id, :state, :outbound_start, :outbound_end, :inbound_start, :inbound_end, :start_airports, :end_airports, :trip_len_min, :trip_len_max, :price_limit, :auto_alert)
+      params.require(:alert).permit(:email, :name, :user_id, :state, :outbound_start, :outbound_end, :inbound_start, :inbound_end, :start_airports, :end_airports, :trip_len_min, :trip_len_max, :price_limit, :auto_alert, :last_searched)
     end
 end

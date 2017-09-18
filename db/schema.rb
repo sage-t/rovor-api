@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20170917213213) do
     t.integer  "trip_len_max",   default: -1,    null: false
     t.integer  "price_limit",    default: -1,    null: false
     t.boolean  "auto_alert",     default: false, null: false
-    t.datetime "last_searched",                  null: false
+    t.datetime "last_searched"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
   end

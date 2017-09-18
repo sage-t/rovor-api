@@ -15,7 +15,7 @@ class CreateAlerts < ActiveRecord::Migration[5.0]
       t.integer :trip_len_max, null: false, default: -1 # no maximum
       t.integer :price_limit, null: false, default: -1 # no price limit
       t.boolean :auto_alert, null: false, default: false
-      t.datetime :last_searched, null: false
+      t.datetime :last_searched, null: true
 
       t.timestamps
     end
